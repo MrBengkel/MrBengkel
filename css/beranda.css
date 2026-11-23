@@ -1,0 +1,203 @@
+/* Beranda mengikuti referensi pemilik Mr. Bengkel. */
+.topbar {
+  background: #102e49;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+}
+.top-inner {
+  padding: 10px 0;
+}
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #dbe3e6;
+}
+.navigation {
+  min-height: 100px;
+}
+.brand img {
+  width: 116px;
+  height: 80px;
+  object-fit: contain;
+}
+.nav-links {
+  gap: 26px;
+}
+.nav-links .button {
+  background: #ff9b38;
+  color: #142b3b;
+  border: 0;
+  border-radius: 5px;
+  padding: 14px 20px;
+}
+.hero {
+  background: #f3f6f5;
+  color: #142b3b;
+  padding: 52px 0 58px;
+  overflow: hidden;
+}
+.hero-grid {
+  grid-template-columns: 1.15fr 1fr;
+  gap: 52px;
+  align-items: center;
+}
+.hero .eyebrow {
+  color: #087db0;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.hero h1 {
+  font-size: clamp(40px, 4.5vw, 64px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 28px;
+}
+.hero h1 em {
+  color: #087fac;
+}
+.hero-description {
+  color: #526674;
+  font-size: 17px;
+  max-width: 460px;
+}
+.hero .button {
+  background: #ff9b38;
+  color: #142b3b;
+  border-radius: 5px;
+}
+.hero .button:hover, .nav-links .button:hover {
+  background: #ffb565;
+}
+.hero .text-link {
+  color: #142b3b;
+}
+.hero .actions {
+  gap: 28px;
+  margin-top: 30px;
+}
+.hero-note {
+  border: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #526674;
+  margin-top: 32px;
+}
+.hero-visual {
+  padding: 0 0 20px 20px;
+}
+.hero-visual::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65%;
+  height: 60%;
+  background: #ff9b38;
+  border-radius: 5px;
+}
+.hero-image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center 55%;
+  border-radius: 5px;
+  position: relative;
+}
+.image-label {
+  position: absolute;
+  bottom: 40px;
+  left: -10px;
+  background: #102e49;
+  color: #fff;
+  padding: 22px 30px;
+  border-radius: 0;
+  box-shadow: 0 12px 30px #102e4912;
+}
+.image-label span {
+  color: #8bd8f7;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+.image-label strong {
+  font-size: 23px;
+  line-height: 1.35;
+}
+@media (min-width: 1450px) {
+  .hero h1 {
+    font-size: 66px;
+  }
+  .hero-image {
+    height: 600px;
+  }
+}
+@media (max-width: 1050px) {
+  .nav-links {
+    gap: 17px;
+  }
+  .hero-grid {
+    gap: 30px;
+  }
+  .hero h1 {
+    font-size: 46px;
+  }
+  .hero-image {
+    height: 490px;
+  }
+}
+@media (max-width: 900px) {
+  .navigation {
+    min-height: 80px;
+  }
+  .brand img {
+    width: 97px;
+    height: 65px;
+  }
+}
+@media (max-width: 760px) {
+  .topbar {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  .hero {
+    padding: 35px 0 45px;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .hero h1 {
+    font-size: clamp(37px, 8.6vw, 52px);
+    letter-spacing: -1.5px;
+  }
+  .hero .eyebrow {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+  .hero-description {
+    font-size: 16px;
+  }
+  .hero-image {
+    height: 400px;
+  }
+  .hero .actions {
+    gap: 22px;
+  }
+  .image-label {
+    left: 0;
+    padding: 18px 22px;
+  }
+  .image-label strong {
+    font-size: 21px;
+  }
+}
+@media (max-width: 380px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+  .hero-image {
+    height: 350px;
+  }
+}
